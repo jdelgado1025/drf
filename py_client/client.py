@@ -2,7 +2,7 @@ import requests
 
 endpoint = "http://localhost:8000/api/"
 
-get_response = requests.get(endpoint, json={"product_id": 123})
+get_response = requests.post(endpoint, json={"title": "Hello World","content": "Django POST request", "price": 100})
 # print(get_response.text)
 
 #HTTP Response
